@@ -5,6 +5,7 @@
     --light-blue: #3296FF;
     --yellow: #FFFF00;
     --grey: #333333;
+    --dark-grey: #222222;
     --white: #FFFFFF;
     --black: #000000;
 }
@@ -26,4 +27,49 @@ body {
     --fontColor: var(--white);
     --btnBg: var(--white);
     --btnFontColor: var(--black);
+}
+
+
+/* aussehen der navbar */
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+
+/* Navbar links */
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* mouse-over farbe */
+
+.navbar a:hover {
+    background-color: #0000FF;
+}
+
+
+/* Farbe des topnav (angeklicktes Element) */
+
+.active {
+    background-color: #1283fc;
+}
+
+
+/* passt sich der Breite des Bildschirms an */
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
 }
