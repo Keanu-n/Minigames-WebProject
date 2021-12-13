@@ -1,0 +1,29 @@
+:root {
+    --green: #00FF00;
+    --red: #FF0000;
+    --blue: #0000FF;
+    --light-blue: #3296FF;
+    --yellow: #FFFF00;
+    --grey: #333333;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: var(--bg)
+}
+
+
+/*theme*/
+
+.dark-theme {
+    --bg: var(--grey);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
