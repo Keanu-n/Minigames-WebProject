@@ -12,12 +12,17 @@
 </head>
 
 <body class="dark-theme">
-    <h1>Mini games &#128516</h1>
-
     <div class="navbar" id="navbar1">
-        <a class="active" href="#Home"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#Games"><i class="fa fa-fw fa-search"></i> Games</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+        <a class="active" href="#Home" onclick="myFunction(evt, home1)"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#Games"><i class="fa fa-fw fa-search" onclick="myFunction(evt, games1)"></i> Games</a>
+    </div>
+
+    <div id="home1" class="navcontent">
+        <h1>Mini games &#128516</h1>
+    </div>
+
+    <div id="games1" class="navcontent">
+        <h1>anderer content</h1>
     </div>
 </body>
 
