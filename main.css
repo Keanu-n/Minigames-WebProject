@@ -96,3 +96,14 @@ body {
         text-align: left;
     }
 }
+
+/* banana game button */
+.bananaGame{
+    background-color: #FFFF00;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+}
