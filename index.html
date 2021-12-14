@@ -12,17 +12,19 @@
 </head>
 
 <body class="dark-theme">
-    <div class="navbar" id="navbar1">
-        <a class="navbar2" href="#Home" onclick="myFunction(event, 'home1')" id="defaultOpen"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a class="navbar2" href="#Games"><i class="fa fa-fw fa-search" onclick="myFunction(event, 'games1')"></i> Games</a>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'Games')">Games</button>
+    </div>
+    
+    <!-- Tab content -->
+    <div id="Home" class="tabcontent">
+        <h1>Home</h1>
     </div>
 
-    <div id="home1" class="navcontent">
-        <h1>Mini games &#128516</h1>
-    </div>
-
-    <div id="games1" class="navcontent">
-        <h1>anderer content</h1>
+    <div id="Games" class="tabcontent">
+        <h1>Games</h1>
     </div>
 </body>
 

@@ -32,7 +32,7 @@ body {
 
 /* aussehen der navbar */
 
-.navbar {
+.tab {
     width: 100%;
     background-color: #555;
     overflow: auto;
@@ -41,7 +41,8 @@ body {
 
 /* Navbar links */
 
-.navbar a {
+.tab button {
+    background-color: #333333;
     float: left;
     text-align: center;
     padding: 12px;
@@ -53,19 +54,19 @@ body {
 
 /* mouse-over farbe */
 
-.navbar a:hover {
+.tab button:hover {
     background-color: #0000FF;
 }
 
 
 /* Farbe des topnav (angeklicktes Element) */
 
-.navbar a.active {
+.tab button.active {
     background-color: #1283fc;
 }
 
 /* aussehen navcontent */
-.navcontent {
+.tabcontent {
     display: none;
     padding: 6px 12px;
     border-top: none;
@@ -75,15 +76,15 @@ body {
 /* passt sich der Breite des Bildschirms an und macht ab 500px topnav horizontal*/
 
 @media screen and (max-width: 500px) {
-    .navbar.responsive {
+    .tab.responsive {
         position: relative;
     }
-    .navbar.responsive a.icon {
+    .tab.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-    .navbar.responsive a {
+    .tab.responsive a {
         float: none;
         display: block;
         text-align: left;
