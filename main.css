@@ -64,6 +64,13 @@ body {
     background-color: #1283fc;
 }
 
+/* aussehen navcontent */
+.navcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+
 
 /* passt sich der Breite des Bildschirms an und macht ab 500px topnav horizontal*/
 
