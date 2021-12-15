@@ -24,9 +24,18 @@ function openTab(evt, tabName) {
 }
 
 //Funktion für Banane
+var id = 0;
+
 function banana() {
-    document.addEventListener('keydown');
-    var element = document.getElementById("bananaAnimation2")
+    document.addEventListener('keydown', function(event) {
+        if (event.code == 37) {
+            bananaLeft();
+        } else if (event.code == 39) {
+            bananaRight();
+        }
+    });
+
+    var element = document.getElementById("bananaAnimation2");
     var position = 0;
     clearInterval(id);
     id = setInterval(frame, 10);
@@ -39,4 +48,14 @@ function banana() {
             element.style.top = position + 'px';
         }
     }
+}
+
+function bananaLeft() {
+    var element = document.getElementById("bananaAnimation2");
+    element.style.right = (element.getBoundingClientRect() + 1) + 'px';
+}
+
+function bananaRight() {
+    var element = document.getElementById("bananaAnimation2");
+    element.style.left = (element.getBoundingClientRect() + 1) + 'px'
 }
