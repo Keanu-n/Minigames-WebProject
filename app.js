@@ -22,3 +22,21 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+//Funktion für Banane
+function banana() {
+    document.addEventListener('keydown');
+    var element = document.getElementById("bananaAnimation2")
+    var position = 0;
+    clearInterval(id);
+    id = setInterval(frame, 10);
+
+    function frame() {
+        if (position == 400) {
+            clearInterval(id);
+        } else {
+            position++;
+            element.style.top = position + 'px';
+        }
+    }
+}
