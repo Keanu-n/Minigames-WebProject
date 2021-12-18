@@ -65,18 +65,24 @@ body {
     background-color: #1283fc;
 }
 
+
 /* aussehen navcontent */
+
 .tabcontent {
     display: none;
     padding: 6px 12px;
     border-top: none;
     animation: fadeEffect 1s;
-  }
+}
 
-  @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 /* passt sich der Breite des Bildschirms an und macht ab 500px topnav horizontal*/
@@ -97,8 +103,10 @@ body {
     }
 }
 
+
 /* banana game button */
-.bananaGame{
+
+.bananaGame {
     background-color: #FFFF00;
     float: left;
     text-align: center;
@@ -108,8 +116,10 @@ body {
     font-size: 17px;
 }
 
+
 /* back buttonn*/
-.back{
+
+.back {
     background-color: #ff9900;
     float: left;
     text-align: center;
@@ -117,4 +127,20 @@ body {
     color: #000000;
     text-decoration: none;
     font-size: 17px;
+}
+
+#bananaBackground {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    background-color: #FF0000;
+}
+
+#bananaAnimation {
+    width: 100px;
+    height: 25px;
+    position: relative;
+    top: 475px;
+    background: #00FF00;
 }

@@ -13,31 +13,27 @@
 
 <body class="dark-theme">
 
-    <!--normal site (wird zum Ausblenden des Inhalts benötigt)-->
-    <div class="normalSite">
-        <!-- Tab links -->
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-            <button class="tablinks" onclick="openTab(event, 'Games')">Games</button>
-        </div>
-        
-        <!-- Tab content -->
-        <div id="Home" class="tabcontent">
-            <h1>Home</h1>
-        </div>
-
-        <div id="Games" class="tabcontent">
-            <h1>Hier findest du lustige Games</h1>
-            <h2>Klicke einfach auf einen Button, dann kannst du das Spiel spielen</h2>
-            <p>
-                In dem "banana game" geht es darum, dass du die Banane mit den Pfeiltasten steuerst und sie auf dem grünen Feld landet.
-            </p>
-            <button class="bananaGame" onclick="bananaGameStart()">play the banana game</button>
-        </div>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen1">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'Games')" id="defaultOpen2">Games</button>
     </div>
 
-    <div class="bananaGame2">
-        <button class="back">Zurück</button>
+    <!-- Tab content -->
+    <div id="Home" class="tabcontent">
+        <h1>Willkommen!</h1>
+        <p>
+            Auf dieser Seite kannst du viele Minispiele spielen oder interessante Berechnungen durchführen.
+        </p>
+    </div>
+
+    <div id="Games" class="tabcontent">
+        <h1>Hier findest du lustige Games</h1>
+        <h2>Klicke einfach auf einen Button, dann kannst du das Spiel spielen</h2>
+        <p>
+            In dem "banana game" geht es darum, dass du die Banane mit den Pfeiltasten steuerst und sie auf dem grünen Feld landet.
+        </p>
+        <button class="bananaGame" onclick="location.href='bananaGame.html'">play the banana game</button>
     </div>
 </body>
 
