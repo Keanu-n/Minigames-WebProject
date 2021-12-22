@@ -149,10 +149,9 @@ body {
 }
 
 #bananaAnimation2 {
-    width: 100px;
-    height: 25px;
     position: relative;
-    top: 475px;
+    top: 0px;
+    left: 10px;
 }
 
 

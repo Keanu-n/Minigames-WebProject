@@ -27,6 +27,7 @@ function openTab(evt, tabName) {
 var id = 0;
 
 function banana() {
+    document.getElementById("bananaAnimation2").style.display = "block";
     var elem = document.getElementById("bananaAnimation2");
     var pos = 0;
 
@@ -36,7 +37,7 @@ function banana() {
 
     function frame() {
 
-        if (pos == 350) {
+        if (pos == 300) {
             clearInterval(id);
         } else {
             pos++;
