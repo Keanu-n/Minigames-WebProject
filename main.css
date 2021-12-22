@@ -167,3 +167,16 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
+
+
+/* banana start button */
+
+.bananaID {
+    background-color: #FFFF00;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+}
