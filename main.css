@@ -144,3 +144,10 @@ body {
     top: 475px;
     background: #00FF00;
 }
+
+#bananaAnimation2 {
+    width: 100px;
+    height: 25px;
+    position: relative;
+    top: 475px;
+}
