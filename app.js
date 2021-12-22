@@ -24,21 +24,33 @@ function openTab(evt, tabName) {
 }
 
 //function to prepare for banana game
-var id = null;
+var id = 0;
 
 function banana() {
     var elem = document.getElementById("bananaAnimation2");
     var pos = 0;
+    style.display="block"
+
     clearInterval(id);
     id = setInterval(frame, 10);
+     
 
     function frame() {
-        if (pos == 350) {
-            clearInterval(id);
-        } else {
+
+           if (pos == 350) {
+                 clearInterval(id);
+            } else {
             pos++;
             elem.style.top = pos + 'px';
             elem.style.left = pos + 'px';
-        }
+       }
     }
+}
+
+
+function nearlylost() {
+    setTimeout(youlost(), 1000)
+}
+function youlost() {
+    document.getElementById("text").innerHTML="You lost"
 }
