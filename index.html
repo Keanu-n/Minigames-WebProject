@@ -15,12 +15,12 @@
 
     <!-- Tab links -->
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-        <button class="tablinks" onclick="openTab(event, 'Games')" id="defaultOpen2">Games</button>
+        <button class="tablinks" onclick="openTab(event, 'Games')" id="defaultOpen">Games</button>
+        <button class="tablinks" onclick="openTab(event, 'UberUns')" id="defaultOpen2">Über uns</button>
     </div>
 
     <!-- Tab content -->
-    <div id="Home" class="tabcontent">
+    <div id="UberUns" class="tabcontent">
         <h1>Willkommen!</h1>
         <p>
             Auf dieser Seite kannst du viele Minispiele spielen oder interessante Berechnungen durchführen.
@@ -30,10 +30,15 @@
     <div id="Games" class="tabcontent">
         <h1>Hier findest du lustige Games</h1>
         <h2>Klicke einfach auf einen Button, dann kannst du das Spiel spielen</h2>
-        <p>
+        <p class="text">
             In dem "banana game" geht es darum, dass du die Banane mit den Pfeiltasten steuerst und sie auf dem grünen Feld landet.
         </p>
         <button class="bananaGame" onclick="location.href='bananaGame.html'">play the banana game</button>
+
+        <p class="text">
+            Im "Symbol game" geht es darum, dass du verschiedene Symbole auf dem Bildschirm so schnell wie möglich nach ihrem Erscheinen anklickst.
+        </p>
+        <button class="symbolGame" onclick="location.href='symbolGame.html'">play the symbol game</button>
     </div>
 </body>
 
