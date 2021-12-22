@@ -24,7 +24,7 @@ function openTab(evt, tabName) {
 }
 
 //function to prepare for banana game
-var id = null;
+var id = 0;
 
 function banana() {
     var elem = document.getElementById("bananaAnimation2");
@@ -45,4 +45,12 @@ function banana() {
             elem.style.left = pos + 'px';
        }
     }
+}
+
+
+function nearlylost() {
+    setTimeout(youlost(), 1000)
+}
+function youlost() {
+    document.getElementById("text").innerHTML="You lost"
 }
