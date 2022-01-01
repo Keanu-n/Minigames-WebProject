@@ -46,3 +46,19 @@ function banana() {
         }
     }
 }
+
+function symbolsHide() {
+    var images;
+    images = document.getElementsByClassName("symbolPictures");
+    for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+}
+
+function symbol() {
+    var images;
+    images = document.getElementsByClassName("symbolPictures");
+    for (i = 0; i < images.length; i++) {
+        images[i].style.display = "block";
+    }
+}

@@ -155,6 +155,19 @@ body {
 }
 
 
+/* start button */
+
+.bananaID {
+    background-color: #FFFF00;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
 /* symbol game */
 
 .symbolGame {
@@ -167,10 +180,7 @@ body {
     font-size: 17px;
 }
 
-
-/* banana start button */
-
-.bananaID {
+.symbolID {
     background-color: #FFFF00;
     float: left;
     text-align: center;
@@ -178,4 +188,35 @@ body {
     color: #000000;
     text-decoration: none;
     font-size: 12px;
+}
+
+#symbolBackground {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    top: 50px;
+    background-color: #0000FF;
+}
+
+#symbolStar2 {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+#symbolMoon2 {
+    position: relative;
+    top: 300px;
+}
+
+#symbolTrain2 {
+    position: relative;
+    top: 250px;
+    left: 20px;
+}
+
+#symbolVader2 {
+    position: relative;
+    top: 90px;
+    left: 300px;
 }
