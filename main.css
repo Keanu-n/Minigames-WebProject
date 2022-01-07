@@ -13,6 +13,13 @@
 * {
     color: var(--fontColor);
     font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
 }
 
 body {
@@ -104,19 +111,6 @@ body {
 }
 
 
-/* banana game button */
-
-.bananaGame {
-    background-color: #FFFF00;
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: #000000;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-
 /* back buttonn*/
 
 .back {
@@ -127,6 +121,13 @@ body {
     color: #000000;
     text-decoration: none;
     font-size: 17px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.back:hover {
+    opacity: 0.7;
 }
 
 
@@ -157,7 +158,7 @@ body {
 
 /* start button */
 
-.bananaID {
+.start {
     background-color: #FFFF00;
     float: left;
     text-align: center;
@@ -165,30 +166,17 @@ body {
     color: #000000;
     text-decoration: none;
     font-size: 12px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.start:hover {
+    opacity: 0.7;
 }
 
 
 /* symbol game */
-
-.symbolGame {
-    background-color: #FFFF00;
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: #000000;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.symbolID {
-    background-color: #FFFF00;
-    float: left;
-    text-align: center;
-    padding: 10px;
-    color: #000000;
-    text-decoration: none;
-    font-size: 12px;
-}
 
 #symbolBackground {
     width: 800px;
@@ -219,4 +207,82 @@ body {
     position: relative;
     top: 90px;
     left: 300px;
+}
+
+
+/* game anfangsbutton */
+
+.goGame {
+    background-color: #FFFF00;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.goGame:hover {
+    opacity: 0.7;
+}
+
+
+/* click game */
+
+.clickButton {
+    padding: 30px 50px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #000000;
+    background-color: #00FF00;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #666;
+    right: 100px;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+.clickButton:hover {
+    background-color: #0000FF;
+    color: #FFF;
+}
+
+.clickButton:active {
+    background-color: #0000FF;
+    box-shadow: 0 5px #555;
+    transform: translateY(4px);
+    color: #FFF;
+}
+
+.counter {
+    color: #FFF;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.ClickBg {
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+
+.clickElements {
+    position: relative;
+    text-align: center;
+}
+
+
+/* clicker button */
+
+.clicker {
+    display: none;
 }

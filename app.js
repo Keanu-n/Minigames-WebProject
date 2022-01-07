@@ -62,3 +62,19 @@ function symbol() {
         images[i].style.display = "block";
     }
 }
+
+var count = 0;
+var start = false;
+
+function clickGameStart() {
+    count = 0;
+    start = true;
+    document.getElementById("ClickCounter").innerHTML = count;
+}
+
+function incrementCount() {
+    if (start == true) {
+        count++;
+        document.getElementById("ClickCounter").innerHTML = count + " mal geklicked, weiter so!";
+    }
+}

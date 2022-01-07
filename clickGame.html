@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol game</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <script src="app.js" defer></script>
+    <script src="clickGame.js" defer></script>
+</head>
+
+<body class="dark-theme">
+    <form>
+        <input type="button" value="Go back!" class="back" onclick="history.back()">
+    </form>
+
+    <br>
+    <br>
+    <h1>Klick zum Starten auf den gelben Knopf!</h1>
+    <button class="start" onclick="clickGameStart()">Start</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="clickElements">
+        <img src="https://4.bp.blogspot.com/-7Oth5J0ur7c/T_tEfzMBixI/AAAAAAAAAac/VSx3xvY53nM/s1600/1280-boston-ma-smart-city.jpg" class="ClickBg" id="img1" style="size: 100%">
+        <h1 id="ClickCounter" class="counter"></h1>
+        <button class="clickButton" onclick="incrementCount()">Klick hier...</button>
+    </div>
+
+</body>
+
+</html>
