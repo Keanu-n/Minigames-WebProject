@@ -65,35 +65,45 @@ function symbol() {
     }
 }
 
-var notClicked = true;
+
+var notClicked = true,
+    symbolOpen = false;
+
 var symbolStar = false,
     symbolVader = false,
     symbolMoon = false,
     symbolTrain = false;
 
-document.getElementById("symbolStar2").onclick = clicked1();
-document.getElementById("symbolVader2").onclick = clicked2();
-document.getElementById("symbolMoon2").onclick = clicked3();
-document.getElementById("symbolTrain2").onclick = clicked4();
-
 function clicked1() {
-    notClicked = false;
-    symbolStar = true;
+    if (symbolOpen == true) {
+        notClicked = false;
+        symbolStar = true;
+        symbolOpen = false;
+    }
 }
 
 function clicked2() {
-    notClicked = false;
-    symbolVader = true;
+    if (symbolOpen == true) {
+        notClicked = false;
+        symbolVader = true;
+        symbolOpen = false;
+    }
 }
 
 function clicked3() {
-    notClicked = false;
-    symbolMoon = true;
+    if (symbolOpen == true) {
+        notClicked = false;
+        symbolMoon = true;
+        symbolOpen = false;
+    }
 }
 
 function clicked4() {
-    notClicked = false;
-    symbolTrain = true;
+    if (symbolOpen == true) {
+        notClicked = false;
+        symbolTrain = true;
+        symbolOpen = false;
+    }
 }
 
 function symbolGame() {
@@ -108,14 +118,21 @@ function symbolGame() {
         setTimeout(moveOn, randTime * 1000);
 
         function moveOn() {
+            symbolOpen = true;
+            notClicked = true;
+
             if (randImage == 0 || randImage == 1) {
-                images[0].style.display = "block";
+                document.getElementById("symbolStar2").style.display = "block";
+                toTheFront("symbolStar2");
             } else if (randImage == 2) {
-                images[1].style.display = "block";
+                document.getElementById("symbolVader2").style.display = "block";
+                toTheFront("symbolVader2");
             } else if (randImage == 3) {
-                images[2].style.display = "block";
+                document.getElementById("symbolMoon2").style.display = "block";
+                toTheFront("symbolMoon2");
             } else {
-                images[3].style.display = "block";
+                document.getElementById("symbolTrain2").style.display = "block";
+                toTheFront("symbolTrain2");
             }
 
             while (notClicked == true) {}
@@ -143,6 +160,13 @@ function symbolGame() {
     }
 
 }
+
+
+function toTheFront(id) {
+    var obj = document.getElementById(id);
+    obj.style.zIndex += 1;
+}
+
 
 //click Game functions
 

@@ -187,26 +187,38 @@ body {
 }
 
 #symbolStar2 {
-    position: relative;
-    top: 20px;
-    left: 10px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    display: block;
 }
 
 #symbolMoon2 {
-    position: relative;
-    top: 300px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    display: block;
 }
 
 #symbolTrain2 {
-    position: relative;
-    top: 250px;
-    left: 20px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    display: block;
 }
 
 #symbolVader2 {
-    position: relative;
-    top: 90px;
-    left: 300px;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    display: block;
+}
+
+.symbolPoints {
+    color: #FFF;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
 }
 
 
