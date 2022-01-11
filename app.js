@@ -46,11 +46,3 @@ function banana() {
        }
     }
 }
-
-
-function nearlylost() {
-    setTimeout(youlost(), 1000)
-}
-function youlost() {
-    document.getElementById("text").innerHTML="You lost"
-}
