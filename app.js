@@ -55,7 +55,7 @@ function symbolsHide() {
     for (i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
-    //setTimeout(symbol(), 2000);
+    setTimeout(symbol, 2000);
 }
 
 function symbol() {
@@ -63,6 +63,15 @@ function symbol() {
     images = document.getElementsByClassName("symbolPictures");
     for (i = 0; i < images.length; i++) {
         images[i].style.display = "block";
+    }
+}
+
+function symbolGame() {
+    var randTime, randImage;
+    symbolsHide();
+    for (var i = 0; i < 20; i++) {
+        randTime = Math.round((Math.random() * 10) + 1);
+        randImage = Math.round((Math.random() * 10) / 4);
     }
 }
 
@@ -167,23 +176,4 @@ function symbolGame() {
 function toTheFront(id) {
     var obj = document.getElementById(id);
     obj.style.zIndex += 1;
-}
-
-
-//click Game functions
-
-var count = 0;
-var start = false;
-
-function clickGameStart() {
-    count = 0;
-    start = true;
-    document.getElementById("ClickCounter").innerHTML = count;
-}
-
-function incrementCount() {
-    if (start == true) {
-        count++;
-        document.getElementById("ClickCounter").innerHTML = count + " mal geklicked, weiter so!";
-    }
 }
