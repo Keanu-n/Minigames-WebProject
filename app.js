@@ -55,6 +55,7 @@ function symbolsHide() {
     for (i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
+    //setTimeout(symbol(), 2000);
 }
 
 function symbol() {
@@ -65,7 +66,7 @@ function symbol() {
     }
 }
 
-
+/*
 var notClicked = true,
     symbolOpen = false;
 
@@ -160,6 +161,7 @@ function symbolGame() {
     }
 
 }
+*/
 
 
 function toTheFront(id) {
