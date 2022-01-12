@@ -25,6 +25,7 @@ function openTab(evt, tabName) {
 
 //function to prepare for banana game
 var id = 0;
+var id1 = 0;
 
 function banana() {
     document.getElementById("bananaAnimation2").style.display = "block";
@@ -184,4 +185,44 @@ function incrementCount() {
         count++;
         document.getElementById("ClickCounter").innerHTML = count + " mal geklicked, weiter so!";
     }
+}
+
+
+
+var pos1 = 0;
+
+
+function move(event) {
+    var x = event.key;
+
+    if (x == "Shift") {
+        document.getElementById("bananaAnimation").style.display = "block";
+        var pos = 0;
+        document.getElementById("bananaAnimation").style.left = pos
+       clearInterval(id1);
+    }
+    else {
+    if (x == "ArrowRight") {
+        var elem = document.getElementById("bananaAnimation");
+        var pos = pos1
+    
+        clearInterval(id1);
+        id1 = setInterval(moveRight, 10);
+    
+        function moveRight() {
+    
+            if (pos == 400) {
+                clearInterval(id1);
+            } else {
+                document.getElementById("anzeige").innerHTML= pos1
+                var pos1 = pos1 + "1";
+                pos++;
+                elem.style.left = pos + 'px';
+            }
+        }
+   }
+   else {
+       clearInterval(id1);
+   }
+}
 }
