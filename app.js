@@ -55,7 +55,6 @@ function symbolsHide() {
     for (i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
-    setTimeout(symbol, 2000);
 }
 
 function symbol() {
@@ -66,13 +65,30 @@ function symbol() {
     }
 }
 
+var randTime, randImage;
+
 function symbolGame() {
-    var randTime, randImage;
     symbolsHide();
     for (var i = 0; i < 20; i++) {
-        randTime = Math.round((Math.random() * 10) + 1);
+        randTime = Math.round((Math.random() * 10) + 2);
         randImage = Math.round((Math.random() * 10) / 4);
+        console.log(randImage);
+        setTimeout(moveOn, randTime * 1000);
     }
+}
+
+function moveOn() {
+    if (randImage == 0 || randImage == 1) {
+        document.getElementById("symbolStar2").style.display = "block";
+    } else if (randImage == 2) {
+        document.getElementById("symbolVader2").style.display = "block";
+    } else if (randImage == 3) {
+        document.getElementById("symbolMoon2").style.display = "block";
+    } else { //if (randImage == 4) {
+        document.getElementById("symbolTrain2").style.display = "block";
+    }
+
+    setTimeout(symbol, 1000);
 }
 
 /*
