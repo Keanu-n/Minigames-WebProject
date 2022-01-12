@@ -48,6 +48,43 @@ function banana() {
     }
 }
 
+var pos1 = 0;
+
+
+function move(event) {
+    var x = event.key;
+
+    if (x == "Shift") {
+        document.getElementById("bananaAnimation").style.display = "block";
+        var pos = 0;
+        document.getElementById("bananaAnimation").style.left = pos
+       clearInterval(id1);
+    }
+    else {
+    if (x == "ArrowRight") {
+        var elem = document.getElementById("bananaAnimation");
+        var pos = pos1
+    
+        clearInterval(id1);
+        id1 = setInterval(moveRight, 10);
+    
+        function moveRight() {
+    
+            if (pos == 400) {
+                clearInterval(id1);
+            } else {
+                document.getElementById("anzeige").innerHTML= pos1
+                var pos1 = pos1 + "1";
+                pos++;
+                elem.style.left = pos + 'px';
+            }
+        }
+   }
+   else {
+       clearInterval(id1);
+   }
+}
+
 //symbol game functions
 
 function symbolsHide() {
@@ -56,6 +93,7 @@ function symbolsHide() {
     for (i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
+    setTimeout(symbol, 2000);
 }
 
 function symbol() {
@@ -66,7 +104,16 @@ function symbol() {
     }
 }
 
+function symbolGame() {
+    var randTime, randImage;
+    symbolsHide();
+    for (var i = 0; i < 20; i++) {
+        randTime = Math.round((Math.random() * 10) + 1);
+        randImage = Math.round((Math.random() * 10) / 4);
+    }
+}
 
+/*
 var notClicked = true,
     symbolOpen = false;
 
@@ -161,68 +208,10 @@ function symbolGame() {
     }
 
 }
+*/
 
 
 function toTheFront(id) {
     var obj = document.getElementById(id);
     obj.style.zIndex += 1;
-}
-
-
-//click Game functions
-
-var count = 0;
-var start = false;
-
-function clickGameStart() {
-    count = 0;
-    start = true;
-    document.getElementById("ClickCounter").innerHTML = count;
-}
-
-function incrementCount() {
-    if (start == true) {
-        count++;
-        document.getElementById("ClickCounter").innerHTML = count + " mal geklicked, weiter so!";
-    }
-}
-
-
-
-var pos1 = 0;
-
-
-function move(event) {
-    var x = event.key;
-
-    if (x == "Shift") {
-        document.getElementById("bananaAnimation").style.display = "block";
-        var pos = 0;
-        document.getElementById("bananaAnimation").style.left = pos
-       clearInterval(id1);
-    }
-    else {
-    if (x == "ArrowRight") {
-        var elem = document.getElementById("bananaAnimation");
-        var pos = pos1
-    
-        clearInterval(id1);
-        id1 = setInterval(moveRight, 10);
-    
-        function moveRight() {
-    
-            if (pos == 400) {
-                clearInterval(id1);
-            } else {
-                document.getElementById("anzeige").innerHTML= pos1
-                var pos1 = pos1 + "1";
-                pos++;
-                elem.style.left = pos + 'px';
-            }
-        }
-   }
-   else {
-       clearInterval(id1);
-   }
-}
 }
