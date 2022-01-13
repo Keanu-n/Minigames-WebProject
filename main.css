@@ -156,11 +156,24 @@ body {
 }
 
 #bananapicture {
+   
     position: relative;
-    top: 0px;
-    left: 100px;
+    margin-right: 10pt;
+    margin-left: 10pt;
     
 }
+
+#bananatext{
+   
+    position: relative;
+    margin-left: 10pt;
+    margin-right: 10pt;
+
+    
+}
+
+
+
 
 /* start button */
 
