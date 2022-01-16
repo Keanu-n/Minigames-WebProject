@@ -86,6 +86,7 @@ function move(event) {
 
 //symbol game functions
 
+/*
 function symbolsHide() {
     var images, i;
     images = document.getElementsByClassName("symbolPictures");
@@ -127,7 +128,6 @@ function wait() {
     symbolsHide();
 }
 
-/*
 
 var randTime, randImage;
 
@@ -154,9 +154,9 @@ function moveOn() {
 
     setTimeout(symbol, 1000);
 }
-
 */
 
+/*
 function clicked1() {
     if (symbolOpen == true) {
         notClicked = false;
@@ -188,6 +188,7 @@ function clicked4() {
         symbolOpen = false;
     }
 }
+*/
 
 /*
 
