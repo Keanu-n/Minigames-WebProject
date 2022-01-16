@@ -174,9 +174,6 @@ body {
 }
 
 
-
-
-
 /* start button */
 
 .start {
@@ -194,52 +191,6 @@ body {
 
 .start:hover {
     opacity: 0.7;
-}
-
-
-/* symbol game */
-
-#symbolBackground {
-    width: 800px;
-    height: 600px;
-    position: relative;
-    top: 50px;
-    background-color: #0000FF;
-}
-
-#symbolStar2 {
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    display: block;
-}
-
-#symbolMoon2 {
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    display: block;
-}
-
-#symbolTrain2 {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    display: block;
-}
-
-#symbolVader2 {
-    position: absolute;
-    top: 70%;
-    left: 45%;
-    display: block;
-}
-
-.symbolPoints {
-    color: #FFF;
-    font-size: 40px;
-    position: absolute;
-    top: 20%;
 }
 
 
@@ -310,4 +261,128 @@ body {
 .clickElements {
     position: relative;
     text-align: center;
+}
+
+/* TicTacToe */
+.grid {
+    position: relative;
+    top: 180px;
+    left: 50px;
+}
+
+.one {
+    padding: 30px 30px;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    left: 150px;
+    top: 200px;
+    position: absolute;
+}
+
+.two {
+    padding: 30px 30px;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    left: 220px;
+    top: 200px;
+    position: absolute;
+}
+
+.three {
+    padding: 30px 30px;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    left: 290px;
+    top: 200px;
+    position: absolute;
+}
+
+.four {
+    padding: 30px 30px;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    left: 150px;
+    top: 270px;
+    position: absolute;
+}
+
+.five {
+    padding: 30px 30px;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    left: 220px;
+    top: 270px;
+    position: absolute;
+}
+
+.six {
+    padding: 30px 30px;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    left: 290px;
+    top: 270px;
+    position: absolute;
+}
+
+.seven {
+    padding: 30px 30px;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    left: 150px;
+    top: 340px;
+    position: absolute;
+}
+
+.eight {
+    padding: 30px 30px;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    left: 220px;
+    top: 340px;
+    position: absolute;
+}
+
+.nine {
+    padding: 30px 30px;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    left: 290px;
+    top: 340px;
+    position: absolute;
 }
