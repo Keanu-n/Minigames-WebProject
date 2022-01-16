@@ -146,6 +146,7 @@ body {
     height: 25px;
     position: relative;
     top: 475px;
+    bottom: 0px;
     left: 0px;
     background: #00FF00;
 }
