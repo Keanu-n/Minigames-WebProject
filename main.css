@@ -380,3 +380,12 @@ body {
     top: 340px;
     position: absolute;
 }
+
+/* logo */
+.logo {
+    height: 20%; 
+    width: 100%;
+    float: left; 
+    text-align: center; 
+    margin-right: 10pt
+}
