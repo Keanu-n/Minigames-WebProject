@@ -265,10 +265,12 @@ body {
 }
 
 /* TicTacToe */
-.grid {
-    position: relative;
-    top: 180px;
-    left: 50px;
+.win {
+    color: #FFF;
+    font-size: 20px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
 }
 
 .one {
@@ -276,7 +278,6 @@ body {
     cursor: pointer;
     outline: none;
     color: #FFF;
-    background-color: #FFF;
     border: none;
     border-radius: 15px;
     left: 150px;
@@ -289,7 +290,6 @@ body {
     cursor: pointer;
     outline: none;
     color: #FFF;
-    background-color: #FFF;
     border: none;
     border-radius: 15px;
     left: 220px;
@@ -302,7 +302,6 @@ body {
     cursor: pointer;
     outline: none;
     color: #FFF;
-    background-color: #FFF;
     border: none;
     border-radius: 15px;
     left: 290px;
@@ -315,7 +314,6 @@ body {
     cursor: pointer;
     outline: none;
     color: #FFF;
-    background-color: #FFF;
     border: none;
     border-radius: 15px;
     left: 150px;
@@ -328,7 +326,6 @@ body {
     cursor: pointer;
     outline: none;
     color: #FFF;
-    background-color: #FFF;
     border: none;
     border-radius: 15px;
     left: 220px;
@@ -341,7 +338,6 @@ body {
     cursor: pointer;
     outline: none;
     color: #FFF;
-    background-color: #FFF;
     border: none;
     border-radius: 15px;
     left: 290px;
@@ -354,7 +350,6 @@ body {
     cursor: pointer;
     outline: none;
     color: #FFF;
-    background-color: #FFF;
     border: none;
     border-radius: 15px;
     left: 150px;
@@ -367,7 +362,6 @@ body {
     cursor: pointer;
     outline: none;
     color: #FFF;
-    background-color: #FFF;
     border: none;
     border-radius: 15px;
     left: 220px;
@@ -380,7 +374,6 @@ body {
     cursor: pointer;
     outline: none;
     color: #FFF;
-    background-color: #FFF;
     border: none;
     border-radius: 15px;
     left: 290px;

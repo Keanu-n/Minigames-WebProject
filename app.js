@@ -103,17 +103,33 @@ var one1 = false, oneX = 0,
 
 function ticTacToe_start(){
     var buttons;
-    buttons = document.getElementsByClassName("tabcontent");
+    buttons = document.getElementsByClassName("tic_btn");
     for (i = 0; i < buttons.length; i++) {
-        buttons[i].style.display = "block";
+        buttons[i].style.backgroundColor = "white";
     }
-    document.getElementById("geewonnen1").style.display = "none";
+    document.getElementById("gewinnen1").style.display = "none";
     btns_active = true;
+
+    one1 = false;
+    two1 = false;
+    three1 = false;
+    four1 = false;
+    five1 = false;
+    six1 = false;
+    seven1 = false;
+    eight1 = false;
+    nine1 = false;
+
+    player = 0;
+
+    //Start button muss verschwinden...
+    document.getElementById("aaaaah").style.display = "none";
 }
 
 //überprüfen ob schon jemand gewonnen hat (alle Möglichkeiten durchlaufen)
 function gewonnen(){
-    player += 1;
+    player = player + 1;
+    console.log(player);
     if(oneX == 1 && twoX == 1 && threeX == 1){
         win(1);
     }else if(oneX == 2 && twoX == 2 && threeX == 2){
@@ -150,11 +166,14 @@ function gewonnen(){
 }
 
 function win(i){
+    console.log("gewonnen");
     if(i == 1){
-        document.getElementById("gewonnen1").innerHTML = "gelb gewinnt!";
+        document.getElementById("gewinnen1").innerHTML ="gelb gewinnt!";
     }else{
-        document.getElementById("gewonnen1").innerHTML = "orange gewinnt!";
+        document.getElementById("gewinnen1").innerHTML ="orange gewinnt!";
     }
+    document.getElementById("gewinnen1").style.display = "block";
+    btns_active = false;
 }
 
 function one(){
@@ -167,6 +186,7 @@ function one(){
             oneX = 2;
         }
         one1 = true;
+        gewonnen();
     }
 }
 
@@ -179,7 +199,8 @@ function two(){
             document.getElementById("two2").style.backgroundColor = "orange";
             twoX = 2;
         }
-        two1 = true
+        two1 = true;
+        gewonnen();
     }
 }
 
@@ -192,7 +213,8 @@ function three(){
             document.getElementById("three2").style.backgroundColor = "orange";
             threeX = 2;
         }
-        three1 = true
+        three1 = true;
+        gewonnen();
     }
 }
 
@@ -205,7 +227,8 @@ function four(){
             document.getElementById("four2").style.backgroundColor = "orange";
             fourX = 2;
         }
-        four1 = true
+        four1 = true;
+        gewonnen();
     }
 }
 
@@ -218,7 +241,8 @@ function five(){
             document.getElementById("five2").style.backgroundColor = "orange";
             fiveX = 2;
         }
-        five1 = true
+        five1 = true;
+        gewonnen();
     }
 }
 
@@ -231,7 +255,8 @@ function six(){
             document.getElementById("six2").style.backgroundColor = "orange";
             sixX = 2;
         }
-        six1 = true
+        six1 = true;
+        gewonnen();
     }
 }
 
@@ -244,7 +269,8 @@ function seven(){
             document.getElementById("seven2").style.backgroundColor = "orange";
             sevenX = 2;
         }
-        seven1 = true
+        seven1 = true;
+        gewonnen();
     }
 }
 
@@ -257,7 +283,8 @@ function eight(){
             document.getElementById("eight2").style.backgroundColor = "orange";
             eightX = 2;
         }
-        eight1 = true
+        eight1 = true;
+        gewonnen();
     }
 }
 
@@ -270,6 +297,7 @@ function nine(){
             document.getElementById("nine2").style.backgroundColor = "orange";
             nineX = 2;
         }
-        nine1 = true
+        nine1 = true;
+        gewonnen();
     }
 }
