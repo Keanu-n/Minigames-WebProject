@@ -27,10 +27,15 @@ function openTab(evt, tabName) {
 var id = 0;
 var id1 = 0;
 
+
 function banana() {
-    document.getElementById("bananaAnimation2").style.display = "block";
+    document.getElementById("anzeige").innerHTML=" "
     var elem = document.getElementById("bananaAnimation2");
-    var pos = 0;
+    var left=Math.random();
+        left=left*300;             
+    document.getElementById("bananaAnimation2").style.left=left+"px";
+    var pos3 = 0       
+    document.getElementById("bananaAnimation2").style.top = pos3
 
     clearInterval(id);
     id = setInterval(frame, 10);
@@ -38,18 +43,19 @@ function banana() {
 
     function frame() {
 
-        if (pos == 300) {
-            clearInterval(id);
-        } else {
-            pos++;
-            elem.style.top = pos + 'px';
-            elem.style.left = pos + 'px';
+        if (pos3 == 400) {
+          clearInterval(id);
+          if (document.getElementById("bananaAnimation").style.left = document.getElementById("bananaAnimation2").style.left) {
+            document.getElementById("anzeige").innerHTML="<strong>YOU WIN!</strong>"
+         }
+            } else {
+                
+             pos3++;
+            document.getElementById("bananaAnimation2").style.top = pos3 + 'px';
+            }
         }
-    }
+    
 }
-
-var pos1 = 0;
-
 
 function move(event) {
     var x = event.key;
@@ -62,7 +68,7 @@ function move(event) {
     } else {
         if (x == "ArrowRight") {
             var elem = document.getElementById("bananaAnimation");
-            var pos = pos1
+            var pos = 0
 
             clearInterval(id1);
             id1 = setInterval(moveRight, 10);
@@ -72,8 +78,6 @@ function move(event) {
                 if (pos == 400) {
                     clearInterval(id1);
                 } else {
-                    document.getElementById("anzeige").innerHTML = pos1
-                    var pos1 = pos1 + "1";
                     pos++;
                     elem.style.left = pos + 'px';
                 }
