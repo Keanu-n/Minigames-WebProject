@@ -285,11 +285,6 @@ body {
 
 /* TicTacToe */
 
-.audio1 {
-    top: 400px;
-    left: 50px;
-}
-
 .win {
     color: #FFF;
     font-size: 20px;
