@@ -162,6 +162,9 @@ function gewonnen(){
         win(1);
     }else if(threeX == 2 && fiveX == 2 && sevenX == 2){
         win(2);
+    }else if(one1 == true && two1 == true && three1 == true && four1 == true &&
+            five1 == true && six1 == true && seven1 == true && eight1 == true && nine1 == true){
+        win(3);
     }
 }
 
@@ -169,8 +172,10 @@ function win(i){
     console.log("gewonnen");
     if(i == 1){
         document.getElementById("gewinnen1").innerHTML ="gelb gewinnt!";
-    }else{
+    }else if(i == 2){
         document.getElementById("gewinnen1").innerHTML ="orange gewinnt!";
+    }else{
+        document.getElementById("gewinnen1").innerHTML ="Unentschieden!";
     }
     document.getElementById("gewinnen1").style.display = "block";
     btns_active = false;
@@ -299,5 +304,24 @@ function nine(){
         }
         nine1 = true;
         gewonnen();
+    }
+}
+
+//sound
+
+class sound {
+    constructor(src) {
+        this.sound = document.createElement("audio");
+        this.sound.src = src;
+        this.sound.setAttribute("preload", "auto");
+        this.sound.setAttribute("controls", "none");
+        this.sound.style.display = "none";
+        document.body.appendChild(this.sound);
+        this.play = function () {
+            this.sound.play();
+        };
+        this.stop = function () {
+            this.sound.pause();
+        };
     }
 }
