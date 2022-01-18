@@ -1,4 +1,3 @@
-https://keanu-n.github.io/Minigames-WebProject/
 $ dig HTTPS://KEANU-N.GITHUB.IO/MINIGAMES-WEBPROJECT/ +nostats +nocomments +nocmd
     > ;HTTPS://KEANU-N.GITHUB.IO/MINIGAMES-WEBPROJECT.                     IN      A
     > HTTPS://KEANU-N.GITHUB.IO/MINIGAMES-WEBPROJECT.              3592    IN      CNAME   YOUR-USERNAME.github.io.
