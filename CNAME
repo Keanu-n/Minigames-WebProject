@@ -1,6 +1,1 @@
 https://keanu-n.github.io/Minigames-WebProject/
-$ dig HTTPS://KEANU-N.GITHUB.IO/MINIGAMES-WEBPROJECT/ +nostats +nocomments +nocmd
-    > ;HTTPS://KEANU-N.GITHUB.IO/MINIGAMES-WEBPROJECT.                     IN      A
-    > HTTPS://KEANU-N.GITHUB.IO/MINIGAMES-WEBPROJECT.              3592    IN      CNAME   YOUR-USERNAME.github.io.
-    > YOUR-USERNAME.github.io.      43192   IN      CNAME    GITHUB-PAGES-SERVER .
-    >  GITHUB-PAGES-SERVER .         22      IN      A       192.0.2.1
