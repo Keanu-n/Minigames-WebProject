@@ -393,7 +393,7 @@ body {
     padding: 30px 30px;
     cursor: pointer;
     outline: none;
-    color: #FFF;
+    color: #000000;
     border: none;
     border-radius: 15px;
     left: 290px;
@@ -420,7 +420,7 @@ ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #333333;
+    background: #666;
     font-size: 18px;
     transition: 0.2s;
 
@@ -431,11 +431,13 @@ ul li {
 }
 
 ul li:nth-child(odd) {
-    background: #FFFF00;
+    background: #ff9900;
+    color: #000000;
 }
   
 ul li:hover {
-    background: #ff9900;
+    background: #DDDD00;
+    color:#000000
 }
 
 ul li.checked {
@@ -465,12 +467,12 @@ ul li.checked::before {
 }
   
 .close:hover {
-    background-color: #FF0000;
+    background-color: #3296FF;
     color: #000000;
 }
   
 .header {
-    background-color: #FF0000;
+    background-color: #3296FF;
     padding: 30px 40px;
     color: #000000;
     text-align: center;
@@ -490,6 +492,7 @@ input {
     padding: 10px;
     float: left;
     font-size: 16px;
+    color: #000000;
 }
   
 .addBtn {
