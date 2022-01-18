@@ -217,6 +217,25 @@ body {
 
 /* click game */
 
+.coolBackground {
+    background: linear-gradient(-45deg, yellow, #3296FF, #ff9900, red);
+	background-size: 400% 400%;
+	animation:gradient 2s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .clickButton {
     padding: 30px 50px;
     font-size: 30px;
